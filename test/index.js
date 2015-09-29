@@ -3,9 +3,9 @@ import tddTest from '../lib';
 
 describe('tdd-test', function () {
   it('should have unit test!', function () {
-    assert(false, 'we expected this package author to add actual unit tests.');
+    assert(false, 1==2);
   });
   it('failed', function () {
-    assert(false, true);
+    assert(true, 1==1);
   });
 });
