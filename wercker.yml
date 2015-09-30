@@ -24,13 +24,13 @@ build:
   steps:
     # A step that executes `npm install` command
     - npm-install
-    - hgen/gulp:
-        tasks: test
+    #- hgen/gulp:
+    #    tasks: test
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
-        name: echo nodejs information
+        name: gulp test
         code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
+          npm install -g gulp
+          gulp test
